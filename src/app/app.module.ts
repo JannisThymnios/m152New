@@ -10,6 +10,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NghomeComponent } from './nghome/nghome.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { GalleryitemComponent } from './galleryitem/galleryitem.component';
+import { MountainListComponent } from './mountain/mountain-list/mountain-list.component';
+import { MountainItemComponent } from './mountain/mountain-item/mountain-item.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { GalleryitemComponent } from './galleryitem/galleryitem.component';
     DashboardComponent,
     NghomeComponent,
     GalleryComponent,
-    GalleryitemComponent
+    GalleryitemComponent,
+    MountainListComponent,
+    MountainItemComponent
   ],
   imports: [
     BrowserModule,
