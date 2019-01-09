@@ -1,7 +1,17 @@
 <mat-card>
+    <img mat-card-image [src]="imgUrl" alt="{{mountainName}}">
+  <mat-card-content>
+    <mat-card-title>{{mountainName}}</mat-card-title>
+    <mat-card-subtitle>Höhe: {{mountainHeight}}m</mat-card-subtitle>
+  </mat-card-content>
+</mat-card>
+
+
+ 
+ <!---<mat-card>
   <mat-card-title id="title">{{mountainName}}</mat-card-title>
   <mat-card-content id="content">
     <img [src]="imgUrl" />
     <p>Höhe: {{mountainHeight}}</p>
   </mat-card-content>
-</mat-card>
+</mat-card>-->

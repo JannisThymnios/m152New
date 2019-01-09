@@ -12,6 +12,11 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { GalleryitemComponent } from './galleryitem/galleryitem.component';
 import { MountainListComponent } from './mountain/mountain-list/mountain-list.component';
 import { MountainItemComponent } from './mountain/mountain-item/mountain-item.component';
+import { VideosComponent } from './videos/videos.component';
+import { VideosItemsComponent } from './videos-items/videos-items.component';
+import { NlclubsComponent } from './clubs/nlclubs/nlclubs.component';
+import { ClubItemComponent } from './clubs/club-item/club-item.component';
+import { ClubSiteComponent } from './clubs/club-site/club-site.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,12 @@ import { MountainItemComponent } from './mountain/mountain-item/mountain-item.co
     GalleryComponent,
     GalleryitemComponent,
     MountainListComponent,
-    MountainItemComponent
+    MountainItemComponent,
+    VideosComponent,
+    VideosItemsComponent,
+    NlclubsComponent,
+    ClubItemComponent,
+    ClubSiteComponent
   ],
   imports: [
     BrowserModule,

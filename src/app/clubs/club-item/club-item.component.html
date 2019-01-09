@@ -1,0 +1,12 @@
+ <mat-card>
+  <mat-card-title id="title">{{ club.clubName }}</mat-card-title>
+  <img mat-card-image [src]="club.logo" alt="{{ club.clubName }}">
+  <div id="container">
+    <div></div>
+    <div id="innerdiv" class="86">
+        <button mat-fab routerLink="{{ club.id }}">
+          <mat-icon>arrow_forward</mat-icon>
+        </button>
+    </div>
+  </div>
+</mat-card>

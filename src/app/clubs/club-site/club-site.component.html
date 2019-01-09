@@ -1,0 +1,54 @@
+<div id="container">
+  <mat-card>
+    <mat-card-title id="title">Leitung</mat-card-title>
+    <div id ="table">
+        <p style="font-weight: bold" id="table-item">CEO</p>
+        <p  id="table-item">{{ club.ceo }}</p>
+        <p style="font-weight: bold"  id="table-item">Sportchef</p>
+        <p  id="table-item">{{ club.manager }}</p>
+        <p style="font-weight: bold"  id="table-item">Coach</p>
+        <p  id="table-item">{{ club.headcoach }}</p>
+        <p style="font-weight: bold"  id="table-item">Gründungsjahr</p>
+        <p  id="table-item">{{ club.founding }}</p>
+    </div>
+  
+  </mat-card>
+  
+  <mat-card>
+    <mat-card-title id="title">Stadion</mat-card-title>
+    <p style="color: grey;">{{ club.stadium }}</p>
+    <div id ="table">
+        <p style="font-weight: bold" id="table-item">Sitzplätze</p>
+        <p  id="table-item">{{ club.seats }}</p>
+        <p style="font-weight: bold"  id="table-item">Stehplätze</p>
+        <p  id="table-item">{{ club.standings }}</p>
+        <p style="font-weight: bold"  id="table-item">Total</p>
+        <p  id="table-item">{{ club.standings + club.seats }}</p>
+        
+    </div>
+  </mat-card>
+
+  <mat-card>
+      <mat-card-title id="title">Meistertitel</mat-card-title>
+      <div id ="table">
+        <p  *ngFor="let item of club.championshipTitle" id="table-item">{{ item }}</p>
+          
+      </div>
+    </mat-card>
+
+
+    <div id ="table">
+        <p style="font-weight: bold" id="table-item">Adresse</p>
+        <p  id="table-item">{{ club.address }} {{ club.zip }} {{ club.city }}</p>
+        <p style="font-weight: bold"  id="table-item">E-Mail Adresse</p>
+        <p  id="table-item">{{ club.email }}</p>
+        
+    </div>
+
+    <div id ="table">
+        <img id="table-item" [src]="club.logo" alt="{{ club.clubName }}" width="100%">
+        <img id="table-item" [src]="club.photo" alt="{{ club.clubName }}" width="200%">
+        
+    </div>
+</div>
+
